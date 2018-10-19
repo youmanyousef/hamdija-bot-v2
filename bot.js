@@ -36,8 +36,37 @@ bot.on('message', function(user, userID, channelID, message, evt){
             case 'h':
 		bot.sendMessage({
                     to: channelID,
-                    message: '**HAMDI BOT HELP** -- `!hieu` - _hieu rOAST_ || `!hue` - _hue rOAST_ || `!justin` - _justin rOAST_ || `!c` - _Counter-Jays Win_ || `!t` - _Jays Win_ || `!og` - _ORANGE!, og_'
+                    message: '**HAMDI BOT HELP** -- `!flag` - _the bosnian flag_ || `!jay` - _jay rOAST_ || `!hieu` - _hieu rOAST_ || `!hue` - _hue rOAST_ || `!justin` - _justin rOAST_ || `!c` - _Counter-Jays Win_ || `!t` - _Jays Win_ || `!og` - _ORANGE!, og_'
                 });
+            break;
+	    //flag
+            case 'flag':
+		bot.sendMessage({
+                    to: channelID,
+                    message: 'https://i.imgur.com/xwpy5nP.png'
+                });
+            break;
+	    //jay
+            case 'jay':
+		var randomJ = jArray[Math.floor(Math.random()*jArray.length)];
+		if (randomJ == jArray[0]) {
+			bot.sendMessage({
+                    		to: channelID,
+                    		message: 'Bro, no joke i made him cry bruh! 2-0!!!'
+                	});
+		}
+		if (randomJ == jArray[1]) {
+			bot.sendMessage({
+                    		to: channelID,
+                    		message: 'Thats what you get for demoting me! Dont demote me below goons again or ill go 3-0'
+                	});
+		}
+		if (randomJ == jArray[2]) {
+			bot.sendMessage({
+                    		to: channelID,
+                    		message: 'I have a message and a appeal to my demote! First I wanna state that Im very upset with the recent demote that wasn\'t even specified for and all I had done is kick yousef under the tag of that him being rude and making up an argument and without my doubt my job is to prevent this with the previous role given an Baldi patrol that the job is too stop problems and took the correct and Human steps to prevent bad image on the server and would like this to be fixed -CHIEF EGG @BomberBanks @HiNoOnesHere Please tell me your response because im very upset with the Dog shit role I would love to contuine my job of stopping fights with the role made for it https://cdn.discordapp.com/attachments/442041450704928779/499056937996910612/video.mov'
+                	});
+		}
             break;
             //Justin
 	    case 'justin':
