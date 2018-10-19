@@ -36,7 +36,7 @@ bot.on('message', function(user, userID, channelID, message, evt){
             case 'h':
 		bot.sendMessage({
                     to: channelID,
-                    message: '**HAMDI BOT HELP** -- `!flag` - _the bosnian flag_ || `!jay` - _jay rOAST_ || `!hieu` - _hieu rOAST_ || `!hue` - _hue rOAST_ || `!justin` - _justin rOAST_ || `!c` - _Counter-Jays Win_ || `!t` - _Jays Win_ || `!og` - _ORANGE!, og_'
+                    message: '**HAMDI BOT HELP** -- `!flag` - _the bosnian flag_ || `!jay` - _jay rOAST_ || `!hieu` - _hieu rOAST_ || `!hue` - _hue rOAST_ || `!justin` - _justin rOAST_ || `!ct` - _Counter-Jays Win_ || `!t` - _Jays Win_ || `!og` - _ORANGE!, og_'
                 });
             break;
 	    //flag
@@ -88,7 +88,7 @@ bot.on('message', function(user, userID, channelID, message, evt){
                 });}
             break;
             //Counter Jays
-            case 'c':
+            case 'ct':
                 bot.sendMessage({
                     to: channelID,
                     message: 'Counter-Jays Win!'
