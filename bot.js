@@ -36,7 +36,7 @@ bot.on('message', function(user, userID, channelID, message, evt){
             case 'h':
 		bot.sendMessage({
                     to: channelID,
-                    message: '**HAMDI BOT HELP** -- `!flag` - _the bosnian flag_ || `!jay` - _jay rOAST_ || `!hieu` - _hieu rOAST_ || `!hue` - _hue rOAST_ || `!justin` - _justin rOAST_ || `!ct` - _Counter-Jays Win_ || `!t` - _Jays Win_ || `!og` - _ORANGE!, og_'
+                    message: '**HAMDI BOT HELP** -- `!vincent` - _vincent rOAST_  || `!al` - _al rOAST_ || `!molly` - _molly rOAST_ || `!flag` - _the bosnian flag_ || `!jay` - _jay rOAST_ || `!hieu` - _hieu rOAST_ || `!hue` - _hue rOAST_ || `!justin` - _justin rOAST_ || `!ct` - _Counter-Jays Win_ || `!t` - _Jays Win_ || `!og` - _ORANGE!, og_'
                 });
             break;
 	    //flag
@@ -46,6 +46,7 @@ bot.on('message', function(user, userID, channelID, message, evt){
                     message: 'https://i.imgur.com/xwpy5nP.png'
                 });
             break;
+	    //al
 	    case 'al':
 		var randomJ = jArray[Math.floor(Math.random()*jArray.length)];
 		if (randomJ == jArray[0]) {
@@ -67,11 +68,34 @@ bot.on('message', function(user, userID, channelID, message, evt){
 			});
 		}
             break;
+	    //molly
 	    case 'molly':
 		bot.sendMessage({
                     to: channelID,
                     message: 'Al\'s my bestieee!'
                 });
+            break;
+	    //vincent
+	    case 'vincent':
+		var randomJ = jArray[Math.floor(Math.random()*jArray.length)];
+		if (randomJ == jArray[0]) {
+			bot.sendMessage({
+                    		to: channelID,
+                    		message: 'What you want nigga?'
+                	});
+		}
+		if (randomJ == jArray[1]) {
+			bot.sendMessage({
+                    		to: channelID,
+                    		message: 'PASS THE MINI\'S DAMN!!'
+                	});
+		}
+		if (randomJ == jArray[2]) {
+			bot.sendMessage({
+                    		to: channelID,
+                    		message: 'DAAAAAAAAAAAAAAAAAAAAAAAYUM O MY'
+			});
+		}
             break;
 	    //jay
             case 'jay':
