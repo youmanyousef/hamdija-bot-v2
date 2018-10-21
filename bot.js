@@ -70,7 +70,7 @@ bot.on('message', function(user, userID, channelID, message, evt){
 	    case 'molly':
 		bot.sendMessage({
                     to: channelID,
-                    message: 'Im a little german nien, and al\'s my bestieee!'
+                    message: 'Al\'s my bestieee!'
                 });
             break;
 	    //jay
