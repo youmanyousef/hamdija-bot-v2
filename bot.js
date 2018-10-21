@@ -46,6 +46,33 @@ bot.on('message', function(user, userID, channelID, message, evt){
                     message: 'https://i.imgur.com/xwpy5nP.png'
                 });
             break;
+	    case 'al':
+		var randomJ = jArray[Math.floor(Math.random()*jArray.length)];
+		if (randomJ == jArray[0]) {
+			bot.sendMessage({
+                    		to: channelID,
+                    		message: 'Naw wanna fight bitch?'
+                	});
+		}
+		if (randomJ == jArray[1]) {
+			bot.sendMessage({
+                    		to: channelID,
+                    		message: 'Molly bestie aksjdhfasf 😂😭'
+                	});
+		}
+		if (randomJ == jArray[2]) {
+			bot.sendMessage({
+                    		to: channelID,
+                    		message: 'jk love you too'
+			});
+		}
+            break;
+	    case 'molly':
+		bot.sendMessage({
+                    to: channelID,
+                    message: 'Im a little german nien, and al\'s my bestieee!'
+                });
+            break;
 	    //jay
             case 'jay':
 		var randomJ = jArray[Math.floor(Math.random()*jArray.length)];
