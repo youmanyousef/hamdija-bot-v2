@@ -20,7 +20,7 @@ bot.on('ready', function(evt){
     logger.info('Connected');
     logger.info('Logged in as: ');
     logger.info(bot.username + ' - (' + bot.id + ')');
-    
+     bot.user.setGame('Boding Jay Currently');
 });
 
 bot.on('message', function(user, userID, channelID, message, evt){
