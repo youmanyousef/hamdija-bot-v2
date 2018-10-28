@@ -17,11 +17,11 @@ client.on("message", (message) => {
   "color": 3447003,
   "timestamp": "2018-10-28T16:55:15.116Z",
   "thumbnail": {
-    "url": "https://cdn.discordapp.com/embed/avatars/0.png"
+    "url": "./unnamed.jpg"
   },
   "author": {
     "name": "made by joseph (youmanyousef)",
-    "icon_url": "https://cdn.discordapp.com/embed/avatars/0.png"
+    "icon_url": "./hamdi.png"
   },
   "fields": [
     {
@@ -104,19 +104,19 @@ client.on("message", (message) => {
   }
   //bosnia flag
   if (message.content.startsWith(prefix + "flag")) {
-    message.channel.send("_Dobrodošli. Kako ste_?", {files: ["https://i.imgur.com/9Dvw7JV.jpg"]});
+    message.channel.send("_Dobrodošli. Kako ste_?", {files: ["./flag.png"]});
   }
   //sad
   if (message.content.startsWith(prefix + "sad")) {
-    message.channel.send({files: ["https://i.imgur.com/9Dvw7JV.jpg"]});
+    message.channel.send({files: ["./sad.png"]});
   }
   //mugshot (ms)
   if (message.content.startsWith(prefix + "ms")) {
-    message.channel.send({files: ["https://i.imgur.com/9Dvw7JV.jpg"]});
+    message.channel.send({files: ["./ms.png"]});
   }
   //hamdi
   if (message.content.startsWith(prefix + "hamdi")) {
-    message.channel.send({files: ["https://i.imgur.com/9Dvw7JV.jpg"]});
+    message.channel.send({files: ["./hamdi.png"]});
   }
   //al rOAST
   if (message.content.startsWith(prefix + "al")) {
