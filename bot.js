@@ -17,11 +17,11 @@ client.on("message", (message) => {
   "color": 3447003,
   "timestamp": "2018-10-28T16:55:15.116Z",
   "thumbnail": {
-    "url": "./unnamed.jpg"
+    "url": "images/unnamed.jpg"
   },
   "author": {
     "name": "made by joseph (youmanyousef)",
-    "icon_url": "./hamdi.png"
+    "icon_url": "images/hamdi.png"
   },
   "fields": [
     {
@@ -108,15 +108,15 @@ client.on("message", (message) => {
   }
   //sad
   if (message.content.startsWith(prefix + "sad")) {
-    message.channel.send({files: ["./sad.png"]});
+    message.channel.send({files: ["images/sad.png"]});
   }
   //mugshot (ms)
   if (message.content.startsWith(prefix + "ms")) {
-    message.channel.send({files: ["./ms.png"]});
+    message.channel.send({files: ["imgaes/ms.png"]});
   }
   //hamdi
   if (message.content.startsWith(prefix + "hamdi")) {
-    message.channel.send({files: ["./hamdi.png"]});
+    message.channel.send({files: ["images/hamdi.png"]});
   }
   //al rOAST
   if (message.content.startsWith(prefix + "al")) {
