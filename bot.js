@@ -15,13 +15,12 @@ client.on("message", (message) => {
 	const embed = {
   "title": "Hamdija Bot Help!",
   "color": 3447003,
-  "timestamp": "2018-10-28T16:55:15.116Z",
   "thumbnail": {
-    "url": "images/unnamed.jpg"
+    "url": "https://i.imgur.com/ExQD0tO.png"
   },
   "author": {
     "name": "made by joseph (youmanyousef)",
-    "icon_url": "images/hamdi.png"
+    "icon_url": "https://i.imgur.com/xJTWqIF.jpg"
   },
   "fields": [
     {
@@ -104,7 +103,7 @@ client.on("message", (message) => {
   }
   //bosnia flag
   if (message.content.startsWith(prefix + "flag")) {
-    message.channel.send("_Dobrodošli. Kako ste_?", {files: ["./flag.png"]});
+    message.channel.send("_Dobrodošli. Kako ste_?", {files: ["images/flag.png"]});
   }
   //sad
   if (message.content.startsWith(prefix + "sad")) {
@@ -112,7 +111,7 @@ client.on("message", (message) => {
   }
   //mugshot (ms)
   if (message.content.startsWith(prefix + "ms")) {
-    message.channel.send({files: ["imgaes/ms.png"]});
+    message.channel.send({files: ["images/ms.png"]});
   }
   //hamdi
   if (message.content.startsWith(prefix + "hamdi")) {
