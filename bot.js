@@ -250,4 +250,4 @@ client.on("message", (message) => {
     message.channel.send("I buy hue KFC🍗!");
   }
 });
-client.login(BOT_TOKEN);
+client.login("NTAwOTYyNzg3NjE1MzA5ODI2.DqWSTQ.Iv9Q7lznX9q5sKOZP99RbSzRJVM");
