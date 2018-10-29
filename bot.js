@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const token = process.env.token;
 var prefix = 'h!';
 var jArray = ['1','2','3'];
 var saying;
@@ -250,4 +251,4 @@ client.on("message", (message) => {
     message.channel.send("I buy hue KFC🍗!");
   }
 });
-client.login("NTAwOTYyNzg3NjE1MzA5ODI2.DqWSTQ.Iv9Q7lznX9q5sKOZP99RbSzRJVM");
+client.login(token);
