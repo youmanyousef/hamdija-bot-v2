@@ -242,7 +242,7 @@ client.on("message", (message) => {
 		message.channel.send(saying);
 	}
 	if (randomJ == jArray[2]){
-		var saying = "What a gay ass, he tried to pull down my pants.";
+		var saying = "I have a message and a appeal to my demote! First I wanna state that Im very upset with the recent demote that wasn\'t even specified for and all I had done is kick yousef under the tag of that him being rude and making up an argument and without my doubt my job is to prevent this with the previous role given an Baldi patrol that the job is too stop problems and took the correct and Human steps to prevent bad image on the server and would like this to be fixed -CHIEF EGG @BomberBanks @HiNoOnesHere Please tell me your response because im very upset with the Dog shit role I would love to contuine my job of stopping fights with the role made for it https://cdn.discordapp.com/attachments/442041450704928779/499056937996910612/video.mov";
 		message.channel.send(saying);
 	}
   }
