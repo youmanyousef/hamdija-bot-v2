@@ -434,4 +434,4 @@ client.on("message", (message) => {
     message.channel.send("I buy hue KFC🍗!");
   }
 });
-client.login(token);
+client.login(NTAwOTYyNzg3NjE1MzA5ODI2.DrfjqQ.wp_crxukYZ_2qOpQlog7oO2oDlI);
