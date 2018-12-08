@@ -1,9 +1,9 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const token = process.env.token;
 var prefix = 'h!';
 var jArray = ['1','2','3'];
-var goons = 'goons';
-var gArray = [];
+var saying;
 client.on("ready", () => {
   console.log("I am ready!");
   client.user.setActivity('jays server getting bodied', { type: 'WATCHING' });
@@ -11,94 +11,6 @@ client.on("ready", () => {
  
 client.on("message", (message) => {
   //help
-  if (message.content.startsWith(prefix + goons+ ' help')) {
-	const embed = {
-  "title": "Hamdija Bot Help!",
-  "color": 3447003,
-  "thumbnail": {
-    "url": "https://i.imgur.com/ExQD0tO.png"
-  },
-  "author": {
-    "name": "made by joseph (youmanyousef)",
-    "icon_url": "https://i.imgur.com/xJTWqIF.jpg"
-  },
-  "footer": {
-    "text": "if you guys have more, please send some! youmanyousef#9295"
-  },
-  "fields": [
-    {
-      "name": "_`goons`_",
-      "value": "the prefix for all the goons you can get. numbers in description is the amount of results."
-    },
-    {
-      "name": "`h!goons jay`",
-      "value": "_Jay is gay 123_ (13)",
-      "inline": true
-    },
-    {
-      "name": "`h!goons hamdi`",
-      "value": "_Hamdi the Eggnificent_ (5)",
-      "inline": true
-    },
-    {
-      "name": "`h!goons gary`",
-      "value": "_Gary the Goon_ (3)",
-      "inline": true
-    },
-    {
-      "name": "`h!goons al`",
-      "value": "_Al unexpectedly appears_ (2)",
-      "inline": true
-    },
-	{
-      "name": "`h!goons andrew`",
-      "value": "_fortnite god and sophia hater_ (2)",
-      "inline": true
-    },
-    {
-      "name": "`h!goons sid`",
-      "value": "_Sid from toy story 2_ (2)",
-      "inline": true
-    },
-    {
-      "name": "`h!goons justin`",
-      "value": "Justin pulls up (3)",
-      "inline": true
-    },
-	{
-      "name": "`h!goons vincent`",
-      "value": "_black nigga asian kid_ (5)",
-      "inline": true
-    },
-    {
-      "name": "`h!goons hieu`",
-      "value": "_One of bob the builders handy tools, Hieu_ (5)",
-      "inline": true
-    },
-	{
-      "name": "`h!goons regis`",
-      "value": "_the legendary regu my negu, shit a brick_ (2)",
-      "inline": true
-    },
-	{
-      "name": "`h!goons edin`",
-      "value": "_mic spammer_ (1)",
-      "inline": true
-    },
-	{
-      "name": "`h!goons xavier`",
-      "value": "_sad zavey hours_ (3)",
-      "inline": true
-    },
-    {
-      "name": "`h!goons erson`",
-      "value": "_erson's too smart for school so he robs the library_ (1)",
-      "inline": true
-    }
-  ]
-};
-	message.channel.send({ embed });
-  }
   if (message.content.startsWith(prefix + "help")) {
     //message.channel.send("**HAMDI BOT HELP** **h!** is the prefix -- `h!fortnite` - _fortnite corrections_ || `h!vincent` - _vincent rOAST_ || `h!al` - _al rOAST_ || `h!molly` - _molly rOAST_ || `h!flag` - _the bosnian flag_ || `h!jay` - _jay rOAST_ || `h!hieu` - _hieu rOAST_ || `h!hue` - _hue rOAST_ || `h!justin` - _justin rOAST_ || `h!ct` - _Counter-Jays Win_ || `h!t` - _Jays Win_ || `h!og` - _ORANGE!, og_");
 	const embed = {
@@ -119,11 +31,6 @@ client.on("message", (message) => {
     {
       "name": "`h!flag`",
       "value": "_The Bosnian Flag_",
-      "inline": true
-    },
-	{
-      "name": "`h!goons`",
-      "value": "_Type `h!goons help` for more info._",
       "inline": true
     },
     {
@@ -194,97 +101,7 @@ client.on("message", (message) => {
   ]
 };
 	message.channel.send({ embed });
-  } 
-  
-  //goons
-	//jay
-	if (message.content.startsWith(prefix+goons+ ' jay')) {
-		var randomJ = 1+(Math.floor(Math.random()*(13)));
-		message.channel.send({files: ["images/goons/jay"+ randomJ +".png"]});
-	}
-	//regis
-	if (message.content.startsWith(prefix+goons+ ' regis')) {
-		var randomJ = 1+(Math.floor(Math.random()*(2)));
-		message.channel.send({files: ["images/goons/regis"+ randomJ +".png"]});
-	}
-	//hamdi
-	if (message.content.startsWith(prefix+goons+ ' hamdi')) {
-		var randomJ = 1+(Math.floor(Math.random()*(5)));
-		message.channel.send({files: ["images/goons/hamdi"+ randomJ +".png"]});
-	}
-	//vincent
-	if (message.content.startsWith(prefix+goons+ ' vincent')) {
-		var randomJ = 1+(Math.floor(Math.random()*(5)));
-		message.channel.send({files: ["images/goons/vincent"+ randomJ +".png"]});
-	}
-	//hieu
-	if (message.content.startsWith(prefix+goons+ ' hieu')) {
-		var randomJ = 1+(Math.floor(Math.random()*(5)));
-		message.channel.send({files: ["images/goons/hieu"+ randomJ +".png"]});
-	}
-	//gary
-	if (message.content.startsWith(prefix+goons+ ' gary')) {
-		var randomJ = 1+(Math.floor(Math.random()*(3)));
-		message.channel.send({files: ["images/goons/gary"+ randomJ +".png"]});
-	}
-	//justin
-	if (message.content.startsWith(prefix+goons+ ' justin')) {
-		var randomJ = 1+(Math.floor(Math.random()*(3)));
-		message.channel.send({files: ["images/goons/justin"+ randomJ +".png"]});
-	}
-	//max and maxroom
-	if (message.content.startsWith(prefix+goons+ ' maxroom')) {
-		var randomJ = 1+(Math.floor(Math.random()*(1)));
-		message.channel.send({files: ["images/goons/maxroom"+ randomJ +".png"]});
-	}else if (message.content.startsWith(prefix+goons+ ' max')) {
-		var randomJ = 1+(Math.floor(Math.random()*(1)));
-		message.channel.send({files: ["images/goons/max"+ randomJ +".png"]});
-	}
-	//yousef or terror
-	if (message.content.startsWith(prefix+goons+ ' terror')) {
-		var randomJ = 1+(Math.floor(Math.random()*(4)));
-		message.channel.send({files: ["images/goons/terror"+ randomJ +".png"]});
-	}
-	if (message.content.startsWith(prefix+goons+ ' yousef')) {
-		var randomJ = 1+(Math.floor(Math.random()*(4)));
-		message.channel.send({files: ["images/goons/terror"+ randomJ +".png"]});
-	}
-	//xavier
-	if (message.content.startsWith(prefix+goons+ ' xavier')) {
-		var randomJ = 1+(Math.floor(Math.random()*(3)));
-		message.channel.send({files: ["images/goons/xavier"+ randomJ +".png"]});
-	}
-	//al
-	if (message.content.startsWith(prefix+goons+ ' al')) {
-		var randomJ = 1+(Math.floor(Math.random()*(2)));
-		message.channel.send({files: ["images/goons/al"+ randomJ +".png"]});
-	}
-	//andrew
-	if (message.content.startsWith(prefix+goons+ ' andrew')) {
-		var randomJ = 1+(Math.floor(Math.random()*(2)));
-		message.channel.send({files: ["images/goons/andrew"+ randomJ +".png"]});
-	}
-	//sidgoon
-	if (message.content.startsWith(prefix+goons+ ' sidgoon')) {
-		var randomJ = 1+(Math.floor(Math.random()*(2)));
-		message.channel.send({files: ["images/goons/sidgoon"+ randomJ +".png"]});
-	}
-	//erson
-	if (message.content.startsWith(prefix+goons+ ' erson')) {
-		var randomJ = 1+(Math.floor(Math.random()*(1)));
-		message.channel.send({files: ["images/goons/erson"+ randomJ +".png"]});
-	}
-	//edin
-	if (message.content.startsWith(prefix+goons+ ' edin')) {
-		var randomJ = 1+(Math.floor(Math.random()*(1)));
-		message.channel.send({files: ["images/goons/edin"+ randomJ +".png"]});
-	}
-	//nathan
-	if (message.content.startsWith(prefix+goons+ ' nathan')) {
-		var randomJ = 1+(Math.floor(Math.random()*(1)));
-		message.channel.send({files: ["images/goons/edin"+ randomJ +".png"]});
-	}
-  
+  }
   //bosnia flag
   if (message.content.startsWith(prefix + "flag")) {
     message.channel.send("_Dobrodošli. Kako ste_?", {files: ["images/flag.png"]});
@@ -425,7 +242,7 @@ client.on("message", (message) => {
 		message.channel.send(saying);
 	}
 	if (randomJ == jArray[2]){
-		var saying = "What a gay ass, he tried to pull down my pants.";
+		var saying = "I have a message and a appeal to my demote! First I wanna state that Im very upset with the recent demote that wasn\'t even specified for and all I had done is kick yousef under the tag of that him being rude and making up an argument and without my doubt my job is to prevent this with the previous role given an Baldi patrol that the job is too stop problems and took the correct and Human steps to prevent bad image on the server and would like this to be fixed -CHIEF EGG @BomberBanks @HiNoOnesHere Please tell me your response because im very upset with the Dog shit role I would love to contuine my job of stopping fights with the role made for it https://cdn.discordapp.com/attachments/442041450704928779/499056937996910612/video.mov";
 		message.channel.send(saying);
 	}
   }
@@ -434,4 +251,4 @@ client.on("message", (message) => {
     message.channel.send("I buy hue KFC🍗!");
   }
 });
-client.login(NTAwOTYyNzg3NjE1MzA5ODI2.DrfjqQ.wp_crxukYZ_2qOpQlog7oO2oDlI);
+client.login(token);
