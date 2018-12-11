@@ -28,7 +28,7 @@ client.on("message", (message) => {
   },
   "fields": [
     {
-      "name": "_`goons`_",
+      "name": "_`h!goons`_",
       "value": "the prefix for all the goons you can get. numbers in description is the amount of results."
     },
     {
@@ -73,7 +73,7 @@ client.on("message", (message) => {
     },
     {
       "name": "`h!goons hieu`",
-      "value": "_One of bob the builders handy tools, Hieu_ (5)",
+      "value": "_One of bob the builders handy tools, Hieu_ (7)",
       "inline": true
     },
 	{
@@ -84,6 +84,11 @@ client.on("message", (message) => {
 	{
       "name": "`h!goons edin`",
       "value": "_mic spammer_ (1)",
+      "inline": true
+    },
+       {
+      "name": "`h!goons greg`",
+      "value": "_hay day scammer_ (1)",
       "inline": true
     },
 	{
