@@ -220,7 +220,7 @@ client.on("message", (message) => {
 	}
 	//hieu
 	if (message.content.startsWith(prefix+goons+ ' hieu')) {
-		var randomJ = 1+(Math.floor(Math.random()*(5)));
+		var randomJ = 1+(Math.floor(Math.random()*(7)));
 		message.channel.send({files: ["images/goons/hieu"+ randomJ +".png"]});
 	}
 	//gary
@@ -236,7 +236,7 @@ client.on("message", (message) => {
 	//max and maxroom
 	if (message.content.startsWith(prefix+goons+ ' maxroom')) {
 		var randomJ = 1+(Math.floor(Math.random()*(1)));
-		message.channel.send({files: ["images/goons/maxroom"+ randomJ +".png"]});
+		message.channel.send({files: ["images/goons/maxroom.png"]});
 	}else if (message.content.startsWith(prefix+goons+ ' max')) {
 		var randomJ = 1+(Math.floor(Math.random()*(1)));
 		message.channel.send({files: ["images/goons/max"+ randomJ +".png"]});
@@ -270,6 +270,11 @@ client.on("message", (message) => {
 		var randomJ = 1+(Math.floor(Math.random()*(2)));
 		message.channel.send({files: ["images/goons/sidgoon"+ randomJ +".png"]});
 	}
+	//greg
+	if (message.content.startsWith(prefix+goons+ ' greg')) {
+		var randomJ = 1+(Math.floor(Math.random()*(1)));
+		message.channel.send({files: ["images/goons/greg"+ randomJ +".png"]});
+	}
 	//erson
 	if (message.content.startsWith(prefix+goons+ ' erson')) {
 		var randomJ = 1+(Math.floor(Math.random()*(1)));
@@ -283,7 +288,7 @@ client.on("message", (message) => {
 	//nathan
 	if (message.content.startsWith(prefix+goons+ ' nathan')) {
 		var randomJ = 1+(Math.floor(Math.random()*(1)));
-		message.channel.send({files: ["images/goons/edin"+ randomJ +".png"]});
+		message.channel.send({files: ["images/goons/nathan"+ randomJ +".png"]});
 	}
   
   //bosnia flag
